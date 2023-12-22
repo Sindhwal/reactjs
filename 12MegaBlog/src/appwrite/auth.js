@@ -46,16 +46,15 @@ export class AuthService {
             await this.account.get();
 
         }catch(e){
-            console.log( e );
+            console.log( 'Unable to get User Info:', e );
+            return null;
         }
     }
 
 
     async logout(){
         try{
-
             await this.account.deleteSessions();
-
         }catch(e){
             console.log(e);
         }

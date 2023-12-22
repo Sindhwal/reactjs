@@ -51,7 +51,6 @@ export class Service {
 
     }
 
-
     // delete post by slug
     async deletePost(slug){
 
@@ -86,7 +85,6 @@ export class Service {
         }
     }
 
-
     async getPosts( queries = [ Query.equal("status","active" )] ){
 
         try{
@@ -101,8 +99,6 @@ export class Service {
             console.log(e)
         }
     }
-
-
 
     // file upload service
 
@@ -148,7 +144,6 @@ export class Service {
         );
     }
 }
-
 
 const service = new Service();
 export default service;
